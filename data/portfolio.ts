@@ -2,7 +2,7 @@ export const portfolio = {
     name: "DIPAL PATEL",
     initials: "DP",
     role: "Full-Stack Developer",
-    // email: "Dipalpatel",
+    email: "Dipalpatel@example.com",
     location: "Ahmedabad, I ndia",
     resumeUrl: "/resume.pdf",
     photo: "./profile-img.jpg",
