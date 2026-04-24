@@ -32,7 +32,7 @@ export default function Stats() {
         <section id="stats" className="relative w-full border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)] py-32">
             <div className="mx-auto max-w-7xl px-6">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16 text-center">
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#22d3ee]">04 — Milestones</p>
+                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-names)]">Milestones</p>
                     <h2 className="text-4xl font-bold tracking-tight text-[var(--text)] md:text-5xl">What I’ve Built So Far</h2>
                 </motion.div>
 
@@ -95,7 +95,7 @@ export default function Stats() {
             hover:shadow-[0_8px_32px_rgba(99,102,241,0.18)]
             hover:-translate-y-1
           ">
-                                            <span className="text-xs font-mono text-[#22d3ee]">{t.year}</span>
+                                            <span className="text-xs font-mono text-[var(--text-names)]">{t.year}</span>
                                             <h3 className="mt-1 text-lg font-semibold text-[var(--text)]">{t.title}</h3>
                                             <p className="mt-2 text-sm text-[var(--text-muted)] leading-relaxed">{t.description}</p>
                                         </div>

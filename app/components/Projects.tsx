@@ -17,7 +17,7 @@ export default function Projects() {
         <section id="projects" className="relative w-full border-t border-[var(--border-subtle)] bg-[var(--bg)] py-32">
             <div className="mx-auto max-w-7xl px-6">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16 text-center">
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#22d3ee]">03 — Projects</p>
+                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-names)]">Projects</p>
                     <h2 className="text-4xl font-bold tracking-tight text-[var(--text)] md:text-5xl">Projects & Learnings</h2>
                     <p className="mx-auto mt-4 max-w-xl text-[var(--text-muted)]">
                         Each project represents a challenge solved, a concept mastered, and a step forward in my development journey.
@@ -107,15 +107,15 @@ export default function Projects() {
 
                                     {/* Links */}
                                     <div className="flex gap-2">
-                                        <a
-                                            href={p.github}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] transition-all hover:border-[#22d3ee]/50 hover:bg-[#22d3ee]/10"
-                                            aria-label="GitHub"
-                                        >
-                                            <GithubIcon />
-                                        </a>
+                                        {/*<a*/}
+                                        {/*    href={p.github}*/}
+                                        {/*    target="_blank"*/}
+                                        {/*    rel="noreferrer"*/}
+                                        {/*    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] transition-all hover:border-[#22d3ee]/50 hover:bg-[#22d3ee]/10"*/}
+                                        {/*    aria-label="GitHub"*/}
+                                        {/*>*/}
+                                        {/*    <GithubIcon />*/}
+                                        {/*</a>*/}
 
                                         <a
                                             href={p.live}

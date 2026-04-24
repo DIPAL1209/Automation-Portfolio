@@ -16,9 +16,9 @@ function Typewriter({ words }: { words: string[] }) {
 
     useEffect(() => {
         const word = words[idx % words.length]
-        let speed = deleting ? 45 : 90
+        let speed = deleting ? 105 : 100
         if (!deleting && sub === word) {
-            const pause = setTimeout(() => setDeleting(true), 1400)
+            const pause = setTimeout(() => setDeleting(true), 1500)
             return () => clearTimeout(pause)
         }
         if (deleting && sub === '') {
@@ -33,9 +33,9 @@ function Typewriter({ words }: { words: string[] }) {
     }, [sub, deleting, idx, words])
 
     return (
-        <span className="bg-gradient-to-r from-[#6366f1] via-[#818cf8] to-[#22d3ee] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[var(--gradient-from)] via-[var(--gradient-via)] to-[var(--gradient-to)] bg-clip-text text-transparent">
             {sub}
-            <span className="ml-1 inline-block h-[0.8em] w-[3px] translate-y-[2px] animate-pulse bg-[#22d3ee]" />
+            <span className="ml-1 inline-block h-[0.8em] w-[2px] translate-y-[2px] animate-pulse bg-[var(--bg-line)]" />
         </span>
     )
 }
@@ -52,7 +52,7 @@ export default function Hero() {
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.9, delay: 2.1, ease: 'easeOut' }}
+                transition={{ duration: 0.9, delay: 1.1, ease: 'easeOut' }}
                 className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center"
             >
                 {portfolio.available && (
@@ -82,7 +82,7 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col items-center gap-4 sm:flex-row">
-                    <a href="#projects" className="group inline-flex items-center gap-2 rounded-lg bg-[#6366f1] px-7 py-3.5 font-medium text-white shadow-lg shadow-[#6366f1]/30 transition-all hover:bg-[#4f46e5] hover:shadow-[#6366f1]/50">
+                    <a href="#projects" className="group inline-flex items-center gap-2 rounded-lg bg-[#23478f] px-7 py-3.5 font-medium text-white shadow-lg shadow-[#6366f1]/30 transition-all hover:bg-[#22378f] hover:shadow-[#6366f1]/50">
                         View Projects
                         <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                     </a>

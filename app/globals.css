@@ -146,17 +146,23 @@ code, .font-mono {
   /* DARK MODE */
 
   .dark {
-    --bg: #200f0f;
+    --bg: rgb(37 49 108 / 0.16);
     --bg-secondary: #141c26;
     --bg-card: #1b2532;
 
     --text: #e6edf3;
-    --text-muted: #9aa7b6;
-
+    --text-muted: #b3c5d4;
+    --bg-line:#ffffff;
     --border: rgba(255,255,255,0.08);
     --border-subtle: rgba(255,255,255,0.04);
-
+    --text-names: #27d5e5;
     --scrollbar-track: #0f1720;
+
+
+    /*Hero section gradient*/
+    --gradient-from: #6366f1;
+    --gradient-via: #818cf8;
+    --gradient-to: #22d3ee;
   }
 
   /* LIGHT MODE */
@@ -165,14 +171,19 @@ code, .font-mono {
     --bg: #f7f9fb;
     --bg-secondary: #eef2f6;
     --bg-card: rgb(255 255 255 / 0.71);
-
+    --bg-line:#000000;
     --text: #1e2937;
-    --text-muted: #5b6b7c;
-
+    --text-muted: rgb(25 32 33 / 0.82);
+   --text-names: #2545aa;
     --border: rgba(0,0,0,0.08);
     --border-subtle: rgba(0,0,0,0.04);
 
     --scrollbar-track: #f7f9fb;
+
+/*Hero section gradient*/
+    --gradient-from: #23478f;
+    --gradient-via: #22378f;
+    --gradient-to: #87478f;
   }
 
   body {

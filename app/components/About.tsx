@@ -14,8 +14,8 @@ export default function About() {
         <section id="about" className="relative w-full border-t border-[var(--border-subtle)] py-32 bg-[var(--bg)]">
             <div className="mx-auto max-w-7xl px-6">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16 text-center">
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#22d3ee]">01 — About</p>
-                    <h2 className="text-4xl font-bold tracking-tight text-[var(--text)] md:text-5xl">About Me</h2>
+                    {/*<p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#22d3ee]">About</p>*/}
+                    <h2 className="text-4xl font-bold tracking-tight text-[#22378f] md:text-5xl">About Me</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
@@ -26,7 +26,7 @@ export default function About() {
                                 <Image src={portfolio.photo} alt={portfolio.name} width={600} height={600} className="h-full w-full object-cover" unoptimized />
                             </div>
                             <div className="absolute -bottom-4 -right-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-3 shadow-xl backdrop-blur-md">
-                                <p className="text-xs text-[var(--text-muted)]">Experience</p>
+                                <p className="text-xs text-[var(--text-names)]">Experience</p>
                                 <p className="font-semibold text-[var(--text)]">{about?.experience || 'N/A'}</p>
                             </div>
                         </div>

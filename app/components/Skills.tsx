@@ -1,23 +1,23 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Server, Monitor, Database } from 'lucide-react'
+import { Server, Monitor, Database, Brain } from 'lucide-react'
 import { portfolio } from '../../data/portfolio'
 
-const iconMap: Record<string, any> = { Server, Monitor, Database }
+const iconMap: Record<string, any> = { Server, Monitor, Database, Brain }
 
 export default function Skills() {
     return (
         <section id="skills" className="relative w-full border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)] py-32">
             <div className="mx-auto max-w-7xl px-6">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16 text-center">
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#22d3ee]">02 — Skills</p>
+                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-names)]">Skills</p>
                     <h2 className="bg-gradient-to-r from-[#8b4555] via-[#6366f1] to-[#4338ca] bg-clip-text text-transparent text-4xl font-bold tracking-tight md:text-5xl drop-shadow-[0_0_10px_rgba(79,70,229,0.15)]">
                         Tech I love to build with
                     </h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mx-auto w-[900px]">
                     {portfolio.skills.map((group, gi) => {
                         const Icon = iconMap[group.icon]
                         return (
@@ -42,6 +42,8 @@ export default function Skills() {
                             </motion.div>
                         )
                     })}
+
+
                 </div>
             </div>
         </section>

@@ -56,9 +56,13 @@ export default function Navbar() {
 
     return (
         <motion.nav
-            initial={{ y: -30, opacity: 0 }}
+            initial={{ y: 0, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 2 }}
+            transition={{
+                duration: 0.9,
+                delay: 1.1,
+                ease: 'easeOut'
+            }}
             className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
                 scrolled
                     ? 'border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur-xl'
@@ -68,9 +72,7 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
                 <a href="#home" className="group relative flex items-center gap-2">
-                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#6366f1] to-[#22d3ee] font-bold text-white">
-                        {portfolio.initials}
-                    </span>
+                    <img src="/Dp-logo.png" alt="DP Logo" className="h-7 w-7 object-contain" />
                     <span className="hidden font-semibold tracking-tight text-[var(--text)] sm:block">
                         {portfolio.name}
                     </span>

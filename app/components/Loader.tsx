@@ -7,7 +7,7 @@ export default function Loader() {
         <motion.div
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 0, transition: { duration: 0.4, ease: 'easeOut' } }}
             className="fixed inset-0 z-[200] flex items-center justify-center bg-[#0a0a0a]"
         >
             <div className="flex flex-col items-center gap-6">

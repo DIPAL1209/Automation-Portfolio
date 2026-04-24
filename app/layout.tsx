@@ -3,21 +3,40 @@ import './globals.css'
 import { ThemeProvider } from 'next-themes'
 
 export const metadata = {
-    title: 'Dipal Patel — Full-Stack Developer',
-    description: 'Full-Stack Developer building blazing-fast, scalable web experiences with the MERN stack and Next.js. Based in Ahmedabad, India.',
-    keywords: ['Full-Stack Developer', 'MERN', 'Next.js', 'React', 'Node.js', 'MongoDB', 'Ahmedabad'],
+    title: 'Dipal Patel — Full Stack Developer | MERN, Next.js & AI',
+
+    description: 'Full-Stack Developer specializing in MERN, Next.js, and AI-powered applications. Building fast, scalable, and modern web experiences.',
+
+    keywords: [
+        'Full Stack Developer',
+        'MERN Stack',
+        'Next.js Developer',
+        'React Developer',
+        'Node.js',
+        'MongoDB',
+        'AI Integration',
+        'Ahmedabad Developer'
+    ],
+
     authors: [{ name: 'Dipal Patel' }],
+
     openGraph: {
-        title: 'Dipal Patel — Full-Stack Developer',
-        description: 'Full-Stack Developer building the web with the MERN stack and Next.js.',
+        title: 'Dipal Patel — Full Stack Developer',
+        description: 'Building scalable web apps with MERN, Next.js, and AI integration.',
         type: 'website',
     },
+    icons: {
+        icon: '/favicon.ico',
+        apple: '/apple-icon.png',
+    },
+    manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" suppressHydrationWarning style={{ scrollBehavior: 'smooth' }}>
         <head>
+            <meta name="apple-mobile-web-app-title" content="Dipal Patel" />
             <script dangerouslySetInnerHTML={{
                 __html: 'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);',
             }} />
