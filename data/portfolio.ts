@@ -109,7 +109,7 @@ export const portfolio = {
             image:
                 "/Chat-img.png",
             tech: ["Socket.IO", "Node.js", "React", "MongoDB", "Express"],
-            // github: "https://github.com/Dipalpatel-12/ChatApp-Main",
+
             live: "https://chat-app-main-seven.vercel.app",
         },
         {
@@ -119,7 +119,7 @@ export const portfolio = {
             image:
                 "Eyevestor-img.jpg",
             tech: ["Next.js", "Tailwind", "JavaScript"],
-            // github: "https://github.com/shreyaoptimitylogics-ai/eyevestor-website",
+
             live: "https://eyevestor-website.vercel.app",
         },
         {
@@ -129,40 +129,10 @@ export const portfolio = {
             image:
                 "Beach-rentals-img.jpg",
             tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-            // github: "https://github.com/Dipalpatel-12",
-            live: "https://www.waterboyrentals.com/",
-        },
-        {
-            title: "Rick’s Beach Rental Platform",
-            description:
-                "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
-            image:
-                "Beach-rentals-img.jpg",
-            tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-            github: "https://github.com/Dipalpatel-12",
+
             live: "https://www.waterboyrentals.com/",
         },
 
-        {
-            title: "Rick’s Beach Rental Platform",
-            description:
-                "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
-            image:
-                "Beach-rentals-img.jpg",
-            tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-            github: "https://github.com/Dipalpatel-12",
-            live: "https://www.waterboyrentals.com/",
-        },
-        {
-            title: "Eyevestor Platform",
-            description:
-                "A clean and responsive investor platform UI built with Next.js and Tailwind CSS.",
-            image:
-                "Eyevestor-img.jpg",
-            tech: ["Next.js", "Tailwind", "JavaScript"],
-            github: "https://github.com/shreyaoptimitylogics-ai/eyevestor-website",
-            live: "https://eyevestor-website.vercel.app",
-        },
 
     ],
     stats: [
