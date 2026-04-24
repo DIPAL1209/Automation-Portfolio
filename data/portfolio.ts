@@ -3,16 +3,16 @@ export const portfolio = {
     // initials: "DP",
     role: "Full-Stack Developer",
     email: "dipal.optimitylogics@gmail.com",
-    location: "Ahmedabad, India",
+    location: "https://maps.google.com/?q=Ahmedabad,Gujarat,India",
     resumeUrl: "/resume.pdf",
-    photo: "./profile-img.jpg",
+    photo: "/profile-img.jpg",
     available: true,
     tagline:
         "I design and develop end-to-end web experiences — blending intuitive UI, scalable backend architecture, cloud infrastructure, and AI integrations using MERN, Next.js, and modern technologies",
     socials: {
         github: "https://github.com/Dipalpatel-12",
         linkedin: "https://www.linkedin.com/in/dipal-patel-p12092003",
-        // twitter: "dipal.optimitylogics@gmail.com",
+
     },
     roles: ["Full-Stack Developer", "MERN Stack Engineer", "Next.JS Developer"],
     about: {
