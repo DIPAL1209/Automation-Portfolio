@@ -3,7 +3,7 @@ export const portfolio = {
     // initials: "DP",
     role: "Full-Stack Developer",
     email: "dipal.optimitylogics@gmail.com",
-    location: "https://maps.google.com/?q=Ahmedabad,Gujarat,India",
+    location: "Ahmedabad,Gujarat,India",
     resumeUrl: "/resume.pdf",
     photo: "/profile-img.jpg",
     available: true,
