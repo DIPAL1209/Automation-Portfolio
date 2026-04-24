@@ -172,15 +172,17 @@ export const portfolio = {
         { label: "Happy Clients", value: 5, suffix: "+" },
     ],
     timeline: [
+
+        {
+            year: "2024 – Present",
+            title: "Senior Full-Stack Developer",
+            description: "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing secure APIs, integrating AI features, and optimizing performance."        },
         {
             year: "2022 – 2024",
             title: "Web Developer",
             description: "Worked at Thinknovus building responsive web applications and improving UI performance using modern frontend technologies."
         },
-        {
-            year: "2024 – Present",
-            title: "Senior Full-Stack Developer",
-            description: "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing secure APIs, integrating AI features, and optimizing performance."        },
+
     ],
     emailjs: {
         serviceId: "YOUR_SERVICE_ID",
