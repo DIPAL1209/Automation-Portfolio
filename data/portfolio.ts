@@ -154,11 +154,11 @@ export const portfolio = {
         },
 
     ],
-    emailjs: {
-        serviceId: "YOUR_SERVICE_ID",
-        templateId: "YOUR_TEMPLATE_ID",
-        publicKey: "YOUR_PUBLIC_KEY",
-    },
+    // emailjs: {
+    //     serviceId: "YOUR_SERVICE_ID",
+    //     templateId: "YOUR_TEMPLATE_ID",
+    //     publicKey: "YOUR_PUBLIC_KEY",
+    // },
 };
 
 export type Portfolio = typeof portfolio;
