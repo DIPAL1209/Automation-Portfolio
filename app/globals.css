@@ -163,6 +163,11 @@ code, .font-mono {
     --gradient-from: #6366f1;
     --gradient-via: #818cf8;
     --gradient-to: #22d3ee;
+
+
+/*hamburger menu*/
+    --menu-bg: linear-gradient(to bottom, rgba(2, 6, 23, 0.8), rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.8));
+    --menu-border: rgba(255, 255, 255, 0.1);
   }
 
   /* LIGHT MODE */
@@ -179,6 +184,11 @@ code, .font-mono {
     --border-subtle: rgba(0,0,0,0.04);
 
     --scrollbar-track: #f7f9fb;
+
+
+    /*hamburger menu*/
+    --menu-bg: linear-gradient(to bottom, rgb(241 241 245), rgb(45 70 118 / 0.85));
+    --menu-border: rgba(0, 0, 0, 0.08);
 
 /*Hero section gradient*/
     --gradient-from: #23478f;

@@ -86,20 +86,12 @@ export default function Hero() {
                         View Projects
                         <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                     </a>
-                    <a href={portfolio.resumeUrl} className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-7 py-3.5 font-medium text-[var(--text)] backdrop-blur-sm transition-all hover:border-[#6366f1]/50 hover:bg-[#6366f1]/10">
-                        <Download className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
-                        Download Resume
-                    </a>
+                    {/*<a href={portfolio.resumeUrl} className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--bg-card)] px-7 py-3.5 font-medium text-[var(--text)] backdrop-blur-sm transition-all hover:border-[#6366f1]/50 hover:bg-[#6366f1]/10">*/}
+                    {/*    <Download className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />*/}
+                    {/*    Download Resume*/}
+                    {/*</a>*/}
                 </div>
             </motion.div>
-
-            {/*<motion.a href="#about" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3 }}*/}
-            {/*          className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[var(--text-muted)]">*/}
-            {/*    <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }} className="flex flex-col items-center gap-2">*/}
-            {/*        <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>*/}
-            {/*        <ArrowDown className="h-4 w-4" />*/}
-            {/*    </motion.div>*/}
-            {/*</motion.a>*/}
         </section>
     )
 }

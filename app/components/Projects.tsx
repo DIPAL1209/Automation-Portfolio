@@ -105,17 +105,9 @@ export default function Projects() {
                                         ))}
                                     </div>
 
-                                    {/* Links */}
+
                                     <div className="flex gap-2">
-                                        {/*<a*/}
-                                        {/*    href={p.github}*/}
-                                        {/*    target="_blank"*/}
-                                        {/*    rel="noreferrer"*/}
-                                        {/*    className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] transition-all hover:border-[#22d3ee]/50 hover:bg-[#22d3ee]/10"*/}
-                                        {/*    aria-label="GitHub"*/}
-                                        {/*>*/}
-                                        {/*    <GithubIcon />*/}
-                                        {/*</a>*/}
+
 
                                         <a
                                             href={p.live}

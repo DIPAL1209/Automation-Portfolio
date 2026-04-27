@@ -14,7 +14,10 @@ export const metadata = {
         'React Developer',
         'Node.js',
         'MongoDB',
+        'MySQL',
         'AI Integration',
+        'DevOps',
+        'Open AI',
         'Ahmedabad Developer'
     ],
 

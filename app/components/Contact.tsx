@@ -52,7 +52,7 @@ export default function Contact() {
         { icon: Mail, label: 'Email', value: portfolio.email, href: `https://mail.google.com/mail/?view=cm&to=${portfolio.email}`  },
         { icon: LinkedinIcon, label: 'LinkedIn', value: 'Dipal Patel', href: portfolio.socials.linkedin },
         { icon: GithubIcon, label: 'GitHub', value: 'Dipal Patel', href: portfolio.socials.github },
-        { icon: MapPin, label: 'Location', value: portfolio.location, href:  portfolio.location  },
+        { icon: MapPin, label: 'Location', value: portfolio.location  },
     ]
 
     return (
@@ -83,18 +83,7 @@ export default function Contact() {
                             ))}
                         </div>
 
-                        <div className="mt-8 flex gap-3">
-                            {[
-                                { icon: GithubIcon, href: portfolio.socials.github },
-                                { icon: LinkedinIcon, href: portfolio.socials.linkedin },
 
-                            ].map((s, i) => (
-                                <a key={i} href={s.href} target="_blank" rel="noreferrer"
-                                   className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--bg-card)] text-[var(--text-muted)] transition-all hover:-translate-y-0.5 hover:border-[#6366f1]/50 hover:text-[var(--text)]">
-                                    <s.icon />
-                                </a>
-                            ))}
-                        </div>
                     </motion.div>
 
                     <motion.form onSubmit={handleSubmit} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}

@@ -56,13 +56,9 @@ export default function Navbar() {
 
     return (
         <motion.nav
-            initial={{ y: 0, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 1.1,
-                ease: 'easeOut'
-            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
                 scrolled
                     ? 'border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur-xl'
@@ -71,13 +67,15 @@ export default function Navbar() {
         >
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-                <a href="#home" className="group relative flex items-center gap-2">
-                    <img src="/Dp-logo.png" alt="DP Logo" className="h-7 w-7 object-contain" />
-                    <span className="hidden font-semibold tracking-tight text-[var(--text)] sm:block">
-                        {portfolio.name}
-                    </span>
+                {/* LOGO */}
+                <a href="#home" className="flex items-center gap-2">
+                    <img src="/Dp-logo.png" alt="DP Logo" className="h-7 w-7" />
+                    <span className="hidden sm:block font-semibold text-[var(--text)]">
+            {portfolio.name}
+          </span>
                 </a>
 
+                {/* DESKTOP MENU */}
                 <ul className="hidden items-center gap-8 md:flex">
                     {links.map((l) => (
                         <li key={l.href}>
@@ -91,48 +89,101 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <div className="hidden items-center gap-3 md:flex">
+                {/* RIGHT SIDE */}
+                <div className="hidden md:flex items-center gap-3">
                     <ThemeToggle />
                     <a
                         href="#contact"
-                        className="rounded-lg border border-[#6366f1]/40 bg-[#6366f1]/10 px-4 py-2 text-sm text-[var(--text)] transition-all hover:bg-[#6366f1]/20"
+                        className="rounded-lg border border-[#6366f1]/40 bg-[#6366f1]/10 px-4 py-2 text-sm hover:bg-[#6366f1]/20"
                     >
                         Let's Talk
                     </a>
                 </div>
 
-                <div className="flex items-center gap-2 md:hidden">
+
+                <div className="flex md:hidden items-center gap-2">
                     <ThemeToggle />
-                    <button
-                        onClick={() => setOpen(!open)}
-                        className="text-[var(--text)]"
-                        aria-label="Toggle menu"
-                    >
+                    <button onClick={() => setOpen(!open)}>
                         {open ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
             </div>
 
+            {/* MOBILE MENU */}
             <AnimatePresence>
                 {open && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden border-t border-[var(--border)] bg-[var(--bg)]/95 backdrop-blur-xl md:hidden"
+                        initial={{ opacity: 0, y: -30, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -20, scale: 0.98 }}
+                        transition={{
+                            duration: 0.4,
+                            ease: [0.22, 1, 0.36, 1], // smooth premium easing
+                        }}
+                        style={{
+                            background: 'var(--menu-bg)',
+                            borderColor: 'var(--menu-border)'
+                        }}
+                        className="absolute top-full left-0 w-full md:hidden
+  backdrop-blur-3xl
+  border-t
+  shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
                     >
-                        <ul className="flex flex-col gap-1 px-6 py-4">
-                            {links.map((l) => (
-                                <li key={l.href}>
+
+
+                        <div className="pointer-events-none absolute left-1/2 top-0 h-[200px] w-[500px] -translate-x-1/2 bg-[#6366f1]/20 blur-[120px]" />
+
+                        <ul className="relative z-10 flex flex-col gap-2 px-6 py-6">
+
+                            {links.map((l, i) => (
+                                <motion.li
+                                    key={l.href}
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: i * 0.05 }}
+                                >
                                     <a
                                         href={l.href}
-                                        onClick={() => setOpen(false)}
-                                        className="block rounded-md px-3 py-2 text-[var(--text-muted)] hover:bg-[var(--bg-card)] hover:text-[var(--text)]"
+                                        onClick={(e) => {
+                                            e.preventDefault()
+                                            const el = document.querySelector(l.href)
+                                            if (el) el.scrollIntoView({ behavior: 'smooth' })
+                                            setTimeout(() => setOpen(false), 200)
+                                        }}
+                                        className="block rounded-xl px-4 py-3 text-sm
+              text-[var(--text-muted)]
+              bg-white/5 backdrop-blur-md
+              border border-white/10
+              hover:text-white
+              hover:border-[#6366f1]/40
+              hover:bg-[#6366f1]/10
+              transition-all duration-300"
                                     >
                                         {l.label}
                                     </a>
-                                </li>
+                                </motion.li>
                             ))}
+
+
+                            <motion.a
+                                href="#contact"
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    const el = document.querySelector('#contact')
+                                    if (el) el.scrollIntoView({ behavior: 'smooth' })
+                                    setTimeout(() => setOpen(false), 200)
+                                }}
+                                className="mt-4 rounded-xl bg-gradient-to-r from-[#6366f1] to-[#22d3ee]
+          px-4 py-3 text-center font-medium text-white
+          shadow-lg shadow-[#6366f1]/30
+          hover:shadow-[#6366f1]/50 transition-all"
+                            >
+                                Let’s Talk
+                            </motion.a>
+
                         </ul>
                     </motion.div>
                 )}
