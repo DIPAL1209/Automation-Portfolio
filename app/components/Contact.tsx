@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import emailjs from '@emailjs/browser'
 import { Mail, MapPin, Send, Loader2, CheckCircle2 } from 'lucide-react'
 import { portfolio } from '../../data/portfolio'
 
@@ -31,15 +30,20 @@ export default function Contact() {
         e.preventDefault()
         setSending(true)
         try {
-            const { serviceId, templateId, publicKey } = portfolio.emailjs
-            if (serviceId.startsWith('YOUR_')) {
-                await new Promise((r) => setTimeout(r, 1200))
-                setToast({ type: 'success', msg: 'Message sent!' })
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+            })
+
+            const data = await res.json()
+
+            if (data.success) {
+                setToast({ type: 'success', msg: 'Message sent! I\'ll reply within 24 hours 🚀' })
+                setForm({ name: '', email: '', message: '' })
             } else {
-                await emailjs.send(serviceId, templateId, form as any, publicKey)
-                setToast({ type: 'success', msg: 'Message sent!' })
+                setToast({ type: 'error', msg: 'Something went wrong. Try again.' })
             }
-            setForm({ name: '', email: '', message: '' })
         } catch {
             setToast({ type: 'error', msg: 'Something went wrong. Try again.' })
         } finally {
