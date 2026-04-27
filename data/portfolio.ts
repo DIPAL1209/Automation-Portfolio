@@ -93,7 +93,7 @@ export const portfolio = {
             category: "Integrations & DevOps",
             icon: "Brain",
             items: [
-                { name: "OpenAI API", color: "#10a37f" },
+                { name: "OpenAI API", color: "#880000" },
                 { name: "AI Implementation", color: "#22c55e" },
                 { name: "Chatbot Development", color: "#0ea5e9" },
                 { name: "Strapi", color: "#8E75FF" },
@@ -146,7 +146,7 @@ export const portfolio = {
         {
             year: "2024 – Present",
             title: "Senior Full-Stack Developer",
-            description: "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing secure APIs, integrating AI features, and optimizing performance."        },
+            description: "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing APIs, integrating AI features, and optimizing performance."        },
         {
             year: "2022 – 2024",
             title: "Web Developer",
