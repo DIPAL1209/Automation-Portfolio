@@ -102,12 +102,44 @@ export const portfolio = {
         }
     ],
     projects: [
+
+        {
+            title: "ReUp – AI Marketplace Platform",
+            description:
+                "Built a modern AI marketplace platform enabling creators to showcase and sell tools through live demos, real-time interaction, and a responsive UI.",
+            image: "reup.png",
+            tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "WebSockets", "MongoDB", "Framer Motion"],
+            live: "https://reup.live/",
+        },
+
+
+
+        {
+            title: "PropFTX – Fractional Real Estate Investment Platform",
+            description:
+                "Developed a modern proptech platform enabling users to invest in real estate through fractional ownership, powered by AI insights, blockchain-based transparency, and a secure investment ecosystem.",
+            image: "propftx-img.jpg",
+            tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "Blockchain", "Web3", "MongoDB", "AWS"],
+            live: "https://www.propftx.com/",
+        },
+
+        {
+            title: "Rick’s Beach Rental Platform",
+            description:
+                "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
+            image:
+                "Beach-rentals-img.jpg",
+            tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
+
+            live: "https://www.waterboyrentals.com/",
+        },
+
         {
             title: "Real-Time Chat Application",
             description:
                 "A scalable chat system with instant messaging, typing indicators, and seamless communication.",
             image:
-                "/Chat-img.png",
+                "chatApp-img.jpg",
             tech: ["Socket.IO", "Node.js", "React", "MongoDB", "Express"],
 
             live: "https://chat-app-main-seven.vercel.app",
@@ -123,16 +155,13 @@ export const portfolio = {
             live: "https://eyevestor-website.vercel.app",
         },
         {
-            title: "Rick’s Beach Rental Platform",
+            title: "Planned – AI-Powered Event Management Platform",
             description:
-                "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
-            image:
-                "Beach-rentals-img.jpg",
-            tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-
-            live: "https://www.waterboyrentals.com/",
+                "Developed a full-stack AI-powered platform for corporate event sourcing, contract management, and payments, featuring automated workflows, real-time analytics, and a global vendor network for seamless event execution.",
+            image: "planned-img.jpg",
+            tech: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "AI Automation", "PostgreSQL", "AWS"],
+            live: "https://planned.com/",
         },
-
 
     ],
     stats: [
@@ -154,11 +183,7 @@ export const portfolio = {
         },
 
     ],
-    // emailjs: {
-    //     serviceId: "YOUR_SERVICE_ID",
-    //     templateId: "YOUR_TEMPLATE_ID",
-    //     publicKey: "YOUR_PUBLIC_KEY",
-    // },
+
 };
 
 export type Portfolio = typeof portfolio;
