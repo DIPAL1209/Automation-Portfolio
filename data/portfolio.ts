@@ -158,7 +158,7 @@ export const portfolio = {
             title: "Planned – AI-Powered Event Management Platform",
             description:
                 "Developed a full-stack AI-powered platform for corporate event sourcing, contract management, and payments, featuring automated workflows, real-time analytics, and a global vendor network for seamless event execution.",
-            image: "planned-img.jpg",
+            image: "Planned-img.jpg",
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "AI Automation", "PostgreSQL", "AWS"],
             live: "https://planned.com/",
         },
