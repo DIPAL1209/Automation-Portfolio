@@ -10,10 +10,12 @@ import { portfolio } from '../../data/portfolio'
 const links = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
+    { label: 'Introduction', href: '#Introduction' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
     { label: 'Stats', href: '#stats' },
     { label: 'Contact', href: '#contact' },
+
 ]
 
 function ThemeToggle() {
