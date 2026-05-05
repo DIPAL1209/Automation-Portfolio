@@ -4,13 +4,13 @@ const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL!
 
 export async function POST(req: NextRequest) {
     try {
-        const { name, email, message } = await req.json()
+        const { name, email, message, memberName } = await req.json()
 
         await fetch(slackWebhookUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                text: `*New Portfolio Contact!*\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`,
+                text: `*New Portfolio Contact!*\n*MemberName:* ${memberName}\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`,
             }),
         })
 

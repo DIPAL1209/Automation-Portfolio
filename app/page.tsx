@@ -38,7 +38,6 @@ export default function App() {
                 <IntroVideo />
                 <Skills />
                 <Projects />
-
                 <Stats />
                 <Contact />
 
