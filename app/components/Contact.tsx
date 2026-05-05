@@ -34,7 +34,7 @@ export default function Contact() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({...form,
-                memberName: "Dipal Patel"}),
+                    From: "Dipal Patel"}),
             })
 
             const data = await res.json()
