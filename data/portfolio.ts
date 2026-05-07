@@ -104,7 +104,7 @@ export const portfolio = {
     projects: [
 
         {
-            title: "ReUp – AI Marketplace Platform",
+            title: "AI Marketplace Platform",
             description:
                 "Built a modern AI marketplace platform enabling creators to showcase and sell tools through live demos, real-time interaction, and a responsive UI.",
             image: "reup.png",
@@ -115,7 +115,7 @@ export const portfolio = {
 
 
         {
-            title: "PropFTX – Fractional Real Estate Investment Platform",
+            title: "Fractional Real Estate Investment Platform",
             description:
                 "Developed a modern proptech platform enabling users to invest in real estate through fractional ownership, powered by AI insights, blockchain-based transparency, and a secure investment ecosystem.",
             image: "propftx-img.jpg",
@@ -124,7 +124,7 @@ export const portfolio = {
         },
 
         {
-            title: "Rick’s Beach Rental Platform",
+            title: "Beach Rental Platform",
             description:
                 "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
             image:
@@ -155,7 +155,7 @@ export const portfolio = {
             live: "https://eyevestor-website.vercel.app",
         },
         {
-            title: "Planned – AI-Powered Event Management Platform",
+            title: "AI-Powered Event Management Platform",
             description:
                 "Developed a full-stack AI-powered platform for corporate event sourcing, contract management, and payments, featuring automated workflows, real-time analytics, and a global vendor network for seamless event execution.",
             image: "Planned-img.jpg",
