@@ -12,6 +12,7 @@ import Projects from './components/Projects'
 import IntroVideo from "@/app/components/IntroVideo";
 import Stats from './components/Stats'
 import Contact from './components/Contact'
+import AITools from "@/app/components/AI-tools";
 
 // const Cursor = dynamic(() => import('./components/Cursor'), { ssr: false })
 
@@ -37,6 +38,7 @@ export default function App() {
                 <About />
                 <IntroVideo />
                 <Skills />
+                <AITools/>
                 <Projects />
                 <Stats />
                 <Contact />

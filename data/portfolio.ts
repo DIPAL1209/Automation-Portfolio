@@ -1,6 +1,5 @@
 export const portfolio = {
     name: "DIPAL PATEL",
-    // initials: "DP",
     role: "Full-Stack Developer",
     email: "dipal.optimitylogics@gmail.com",
     location: "Ahmedabad,Gujarat,India",
@@ -12,12 +11,11 @@ export const portfolio = {
     socials: {
         github: "https://github.com/Dipalpatel-12",
         linkedin: "https://www.linkedin.com/in/dipal-patel-p12092003",
-
     },
     roles: ["Full-Stack Developer", "MERN Stack Engineer", "Next.JS Developer"],
     about: {
         story:
-            "I’m a passionate Full-Stack Developer based in Ahmedabad, India, with over 4 years of experience building modern, scalable web applications. I specialize in the MERN stack and modern frontend frameworks like Next.js, focusing on creating fast, responsive, and user-centric digital experiences.\n" +
+            "I'm a passionate Full-Stack Developer based in Ahmedabad, India, with over 4 years of experience building modern, scalable web applications. I specialize in the MERN stack and modern frontend frameworks like Next.js, focusing on creating fast, responsive, and user-centric digital experiences.\n" +
             "My approach to development goes beyond simply writing code — From designing efficient REST APIs and implementing real-time features to crafting intuitive and responsive user interfaces.\n" +
             "\n" +
             "What Defines My Work\n" +
@@ -26,7 +24,6 @@ export const portfolio = {
             "• I prioritize clean, maintainable, and scalable code\n" +
             "• I focus on user experience alongside technical performance\n" +
             "• I enjoy building full-stack solutions from backend to UI",
-
         experience: "4+ Year Experience",
         highlights: [
             {
@@ -47,12 +44,10 @@ export const portfolio = {
         ],
         funFacts: [
             { label: "Ahmedabad, India", icon: "MapPin" },
-            // { label: "Powered by coffee", icon: "Coffee" },
             { label: "Open-source contributor", icon: "Github" },
         ],
     },
     skills: [
-
         {
             category: "Frontend",
             icon: "Monitor",
@@ -71,13 +66,13 @@ export const portfolio = {
             icon: "Server",
             items: [
                 { name: "Node.js", color: "#339933" },
+                { name: "Supabase", color: "#880000" },
                 { name: "Express.js", color: "#FF9933" },
                 { name: "REST API Development", color: "#22c55e" },
                 { name: "Socket.IO", color: "#25c2a0" },
                 { name: "Middleware & API Handling", color: "#6366f1" },
             ],
         },
-
         {
             category: "Database",
             icon: "Database",
@@ -86,9 +81,9 @@ export const portfolio = {
                 { name: "Mongoose", color: "#880000" },
                 { name: "SQL", color: "#f29111" },
                 { name: "PostgreSQL", color: "#6366f1" },
+                { name: "Redis", color: "#38bdf8" },
             ],
         },
-
         {
             category: "Integrations & DevOps",
             icon: "Brain",
@@ -99,10 +94,9 @@ export const portfolio = {
                 { name: "Strapi", color: "#8E75FF" },
                 { name: "AWS / Cloud Deployment", color: "#FF9900" },
             ],
-        }
+        },
     ],
     projects: [
-
         {
             title: "AI Marketplace Platform",
             description:
@@ -111,9 +105,6 @@ export const portfolio = {
             tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "WebSockets", "MongoDB", "Framer Motion"],
             live: "https://reup.live/",
         },
-
-
-
         {
             title: "Fractional Real Estate Investment Platform",
             description:
@@ -122,36 +113,28 @@ export const portfolio = {
             tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "Blockchain", "Web3", "MongoDB", "AWS"],
             live: "https://www.propftx.com/",
         },
-
         {
             title: "Beach Rental Platform",
             description:
                 "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
-            image:
-                "Beach-rentals-img.jpg",
-            tech:["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-
+            image: "Beach-rentals-img.jpg",
+            tech: ["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
             live: "https://www.waterboyrentals.com/",
         },
-
         {
             title: "Real-Time Chat Application",
             description:
                 "A scalable chat system with instant messaging, typing indicators, and seamless communication.",
-            image:
-                "chatApp-img.jpg",
+            image: "chatApp-img.jpg",
             tech: ["Socket.IO", "Node.js", "React", "MongoDB", "Express"],
-
             live: "https://chat-app-main-seven.vercel.app",
         },
         {
             title: "Eyevestor Platform",
             description:
                 "A clean and responsive investor platform UI built with Next.js and Tailwind CSS.",
-            image:
-                "Eyevestor-img.jpg",
+            image: "Eyevestor-img.jpg",
             tech: ["Next.js", "Tailwind", "JavaScript"],
-
             live: "https://eyevestor-website.vercel.app",
         },
         {
@@ -162,7 +145,6 @@ export const portfolio = {
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "AI Automation", "PostgreSQL", "AWS"],
             live: "https://planned.com/",
         },
-
     ],
     stats: [
         { label: "Projects Built", value: 10, suffix: "+" },
@@ -171,19 +153,139 @@ export const portfolio = {
         { label: "Happy Clients", value: 5, suffix: "+" },
     ],
     timeline: [
-
         {
             year: "2024 – Present",
             title: "Senior Full-Stack Developer",
-            description: "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing APIs, integrating AI features, and optimizing performance."        },
+            description:
+                "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing APIs, integrating AI features, and optimizing performance.",
+        },
         {
             year: "2022 – 2024",
             title: "Web Developer",
-            description: "Worked at Thinknovus building responsive web applications and improving UI performance using modern frontend technologies."
+            description:
+                "Worked at Thinknovus building responsive web applications and improving UI performance using modern frontend technologies.",
         },
-
     ],
 
-};
+    // ─── AI Tools ─────────────────────────────────────────────────────────────
+    aiTools: {
+        heroes: [
+            {
+                id: "claude",
+                name: "Claude by Anthropic",
+                tag: "Architecture",
+                accent: "#f97316",
+                logoBg: "rgba(249,115,22,0.12)",
+                tagBg: "rgba(249,115,22,0.12)",
+                tagColor: "#fb923c",
+                description:
+                    "My primary thinking partner — architecting complex features, writing detailed proposals, debugging tricky logic. Its context window handles entire codebases without losing thread.",
+                sparks: ["Architecture", "Proposals", "Debugging", "Code Review"],
+            },
+            {
+                id: "chatgpt",
+                name: "ChatGPT",
+                tag: "Brainstorm",
+                accent: "#10a37f",
+                logoBg: "rgba(16,163,127,0.12)",
+                tagBg: "rgba(16,163,127,0.12)",
+                tagColor: "#10a37f",
+                description:
+                    "Quick idea bouncing, content drafts, and exploring alternative approaches when weighing architecture decisions. Great for fast exploration without any context setup.",
+                sparks: ["Brainstorming", "Drafting", "Exploration"],
+            },
+        ],
+        tools: [
+            {
+                id: "lovable",
+                name: "Lovable",
+                tag: "Prototyping",
+                accent: "#ff6b6b",
+                logoBg: "rgba(255,107,107,0.1)",
+                tagBg: "rgba(255,107,107,0.1)",
+                tagColor: "#ff6b6b",
+                description:
+                    "Full-stack prototyping at speed. I validate UI ideas quickly before committing to production-level polish.",
+            },
+            {
+                id: "v0",
+                name: "v0 by Vercel",
+                tag: "UI Gen",
+                accent: "#94a3b8",
+                logoBg: "rgba(148,163,184,0.08)",
+                tagBg: "rgba(148,163,184,0.08)",
+                tagColor: "#94a3b8",
+                description:
+                    "Generate polished Tailwind + shadcn components from plain descriptions. Massively speeds up UI scaffolding.",
+            },
+            {
+                id: "bolt",
+                name: "Bolt",
+                tag: "Full-stack",
+                accent: "#facc15",
+                logoBg: "rgba(250,204,21,0.1)",
+                tagBg: "rgba(250,204,21,0.1)",
+                tagColor: "#ca8a04",
+                description:
+                    "Full-stack projects in the browser. Perfect for spinning up interactive demos clients can explore instantly.",
+            },
+            {
+                id: "builder",
+                name: "Builder.io",
+                tag: "Visual CMS",
+                accent: "#6366f1",
+                logoBg: "rgba(99,102,241,0.1)",
+                tagBg: "rgba(99,102,241,0.1)",
+                tagColor: "#818cf8",
+                description:
+                    "Visual CMS integrated into Next.js — clients manage content without touching code. Zero dev overhead post-launch.",
+            },
+            {
+                id: "cursor",
+                name: "Cursor",
+                tag: "Coding",
+                accent: "#a78bfa",
+                logoBg: "rgba(167,139,250,0.1)",
+                tagBg: "rgba(167,139,250,0.1)",
+                tagColor: "#a78bfa",
+                description:
+                    "AI-native editor that reads intent, not just syntax. Pair programming that actually keeps pace with how I think.",
+            },
+            {
+                id: "perplexity",
+                name: "Perplexity",
+                tag: "Research",
+                accent: "#34d399",
+                logoBg: "rgba(52,211,153,0.1)",
+                tagBg: "rgba(52,211,153,0.1)",
+                tagColor: "#059669",
+                description:
+                    "Real-time search with citations. Go-to for library deep-dives, security patches, and client industry context.",
+            },
+            {
+                id: "emergent",
+                name: "Emergent",
+                tag: "Automation",
+                accent: "#22d3ee",
+                logoBg: "rgba(34,211,238,0.1)",
+                tagBg: "rgba(34,211,238,0.1)",
+                tagColor: "#22d3ee",
+                description:
+                    "AI-driven research and automation. Tracks tech papers and emerging tools that actually matter to my stack.",
+            },
+            {
+                id: "framer",
+                name: "Framer",
+                tag: "No-Code UI",
+                accent: "#2563eb",
+                logoBg: "rgba(37,99,235,0.1)",
+                tagBg: "rgba(37,99,235,0.1)",
+                tagColor: "#60a5fa",
+                description:
+                    "Rapidly designing high-converting modern websites and interactive SaaS landing pages with polished animations and production-ready responsiveness.",
+            },
+        ],
+    },
+}
 
-export type Portfolio = typeof portfolio;
+export type Portfolio = typeof portfolio
