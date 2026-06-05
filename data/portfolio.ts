@@ -1,45 +1,49 @@
 export const portfolio = {
     name: "DIPAL PATEL",
-    role: "Full-Stack Developer",
+    role: "No-Code & AI Automation Specialist",
     email: "dipal.optimitylogics@gmail.com",
     location: "Ahmedabad,Gujarat,India",
     resumeUrl: "/resume.pdf",
     photo: "/profile-img.jpg",
     available: true,
     tagline:
-        "I design and develop end-to-end web experiences — blending intuitive UI, scalable backend architecture, cloud infrastructure, and AI integrations using MERN, Next.js, and modern technologies",
+        "I help startups and businesses build websites, apps, and AI-powered automation systems using Webflow, Bubble, Framer, n8n, Make, and Zapier — delivering scalable solutions without traditional development complexity.",
     socials: {
-        github: "https://github.com/Dipalpatel-12",
-        linkedin: "https://www.linkedin.com/in/dipal-patel-p12092003",
+        contra: "https://contra.com/dipal_patel/work?r=dipal_patel",
+        upwork: "https://www.upwork.com/freelancers/~014bca62023382a0c1",
     },
-    roles: ["Full-Stack Developer", "MERN Stack Engineer", "Next.JS Developer"],
+    roles: [
+        "No-Code Developer",
+        "AI Automation Specialist",
+        "Webflow & Bubble Expert",
+        "Workflow Automation Consultant"
+    ],
     about: {
         story:
-            "I'm a passionate Full-Stack Developer based in Ahmedabad, India, with over 4 years of experience building modern, scalable web applications. I specialize in the MERN stack and modern frontend frameworks like Next.js, focusing on creating fast, responsive, and user-centric digital experiences.\n" +
-            "My approach to development goes beyond simply writing code — From designing efficient REST APIs and implementing real-time features to crafting intuitive and responsive user interfaces.\n" +
-            "\n" +
-            "What Defines My Work\n" +
-            "\n" +
-            "• I think in systems and architecture, not just individual features\n" +
-            "• I prioritize clean, maintainable, and scalable code\n" +
-            "• I focus on user experience alongside technical performance\n" +
-            "• I enjoy building full-stack solutions from backend to UI",
+            "I'm a No-Code & AI Automation Specialist based in Ahmedabad, India, helping startups, agencies, and businesses build scalable digital products and automation systems without traditional development overhead.\n\n" +
+            "I specialize in Webflow, Bubble, Framer, Wix, n8n, Make, and Zapier — building everything from marketing websites and SaaS MVPs to AI-powered workflows, CRM automations, and business process systems.\n\n" +
+            "My approach goes beyond connecting tools. I focus on understanding business operations, identifying bottlenecks, and designing systems that save time, reduce manual work, and create measurable business impact.\n\n" +
+            "What Defines My Work\n\n" +
+            "• I think in systems, workflows, and automation\n" +
+            "• I focus on business outcomes, not just implementation\n" +
+            "• I build scalable no-code solutions that teams can manage independently\n" +
+            "• I combine AI and automation to eliminate repetitive work",
         experience: "4+ Year Experience",
         highlights: [
             {
-                title: "Clean Code",
-                description: "Readable, testable, and maintainable code is non-negotiable in every line I write.",
-                icon: "Code2",
+                title: "Automation First",
+                description: "I identify repetitive processes and replace them with scalable automated workflows.",
+                icon: "Workflow",
             },
             {
-                title: "Scalable Systems",
-                description: "I architect systems that grow gracefully — from a hundred users to a million.",
+                title: "Business Systems",
+                description: "From CRM pipelines to AI agents, I build systems that improve operations.",
                 icon: "Layers",
             },
             {
-                title: "Continuous Learning",
-                description: "Tech evolves every day, and so do I — always exploring what's next.",
-                icon: "GraduationCap",
+                title: "Rapid Delivery",
+                description: "Launch websites, apps, and automation systems in weeks instead of months.",
+                icon: "Rocket",
             },
         ],
         funFacts: [
@@ -49,115 +53,104 @@ export const portfolio = {
     },
     skills: [
         {
-            category: "Frontend",
+            category: "No-Code Development",
             icon: "Monitor",
             items: [
-                { name: "React", color: "#61dafb" },
-                { name: "Next.js", color: "#880000" },
-                { name: "HTML", color: "#e34f26" },
-                { name: "CSS", color: "#1572b6" },
-                { name: "TypeScript", color: "#339933" },
-                { name: "Tailwind CSS", color: "#38bdf8" },
-                { name: "Material UI", color: "#007fff" },
+                { name: "Webflow", color: "#4353ff" },
+                { name: "Bubble", color: "#1700ff" },
+                { name: "Framer", color: "#000000" },
+                { name: "Wix", color: "#0c6eff" },
             ],
         },
         {
-            category: "Backend",
-            icon: "Server",
+            category: "Automation",
+            icon: "Workflow",
             items: [
-                { name: "Node.js", color: "#339933" },
-                { name: "Supabase", color: "#880000" },
-                { name: "Express.js", color: "#FF9933" },
-                { name: "REST API Development", color: "#22c55e" },
-                { name: "Socket.IO", color: "#25c2a0" },
-                { name: "Middleware & API Handling", color: "#6366f1" },
+                { name: "n8n", color: "#ef6c00" },
+                { name: "Make", color: "#7c3aed" },
+                { name: "Zapier", color: "#ff4f00" },
+                { name: "Webhook Automation", color: "#22c55e" },
+                { name: "API Integrations", color: "#6366f1" },
             ],
         },
         {
-            category: "Database",
-            icon: "Database",
-            items: [
-                { name: "MongoDB", color: "#47a248" },
-                { name: "Mongoose", color: "#880000" },
-                { name: "SQL", color: "#f29111" },
-                { name: "PostgreSQL", color: "#6366f1" },
-                { name: "Redis", color: "#38bdf8" },
-            ],
-        },
-        {
-            category: "Integrations & DevOps",
+            category: "AI Systems",
             icon: "Brain",
             items: [
-                { name: "OpenAI API", color: "#880000" },
-                { name: "AI Implementation", color: "#22c55e" },
-                { name: "Chatbot Development", color: "#0ea5e9" },
-                { name: "Strapi", color: "#8E75FF" },
-                { name: "AWS / Cloud Deployment", color: "#FF9900" },
+                { name: "OpenAI", color: "#10a37f" },
+                { name: "Claude API", color: "#f97316" },
+                { name: "Gemini", color: "#4285f4" },
+                { name: "Perplexity", color: "#34d399" },
+                { name: "AI Agents", color: "#8b5cf6" },
+                { name: "ElevenLabs", color: "#111827" },
+                { name: "HeyGen", color: "#7c3aed" },
+                { name: "Prompt Engineering", color: "#f59e0b" },
+            ],
+        },
+        {
+            category: "Business Tools",
+            icon: "Database",
+            items: [
+                { name: "Airtable", color: "#18bfff" },
+                { name: "Notion", color: "#000000" },
+                { name: "HubSpot", color: "#ff7a59" },
+                { name: "Monday.com", color: "#ffcb00" },
+                { name: "Google Sheets", color: "#34a853" },
+                { name: "Slack", color: "#4a154b" },
+                { name: "Shopify", color: "#96bf48" },
+                { name: "Stripe", color: "#6772e5" },
+                { name: "Typeform", color: "#262627" },
             ],
         },
     ],
     projects: [
         {
-            title: "AI Marketplace Platform",
-            description:
-                "Built a modern AI marketplace platform enabling creators to showcase and sell tools through live demos, real-time interaction, and a responsive UI.",
-            image: "reup.png",
-            tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "WebSockets", "MongoDB", "Framer Motion"],
-            live: "https://reup.live/",
+            title: "Gifting Experience Platform",
+            description: "Designed and developed a modern gifting platform on Webflow that lets users send digital gifts and celebrate moments with friends and family. Built with clean UI, smooth interactions, and a fully responsive layout optimized for conversion.",
+            image: "/givingli.png",
+            video: "/givingli.mp4",
+            tech: ["Webflow", "CMS", "Interactions", "Responsive Design"],
+            live: "https://givingli-2024.webflow.io/",
         },
         {
-            title: "Fractional Real Estate Investment Platform",
-            description:
-                "Developed a modern proptech platform enabling users to invest in real estate through fractional ownership, powered by AI insights, blockchain-based transparency, and a secure investment ecosystem.",
-            image: "propftx-img.jpg",
-            tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "Blockchain", "Web3", "MongoDB", "AWS"],
-            live: "https://www.propftx.com/",
+            title: "CHEC — Luxury Fashion E-Commerce",
+            description: "Designed and developed a premium fashion e-commerce store for CHEC on Webflow. Built with editorial-quality visuals, a curated product catalog, smooth scroll interactions, and a clean luxury aesthetic centered around the brand's identity — Less Noise, More Style.",
+            image: "/chec.png",
+            video: "/chec.mp4",
+            tech: ["Webflow", "E-Commerce", "CMS", "Interactions", "Editorial Design"],
+            live: "https://chec-buzz.webflow.io/",
         },
         {
-            title: "Beach Rental Platform",
-            description:
-                "Built a high-performance full-stack system for rental bookings with real-time data handling, secure payments, and cloud-scalable architecture.",
-            image: "Beach-rentals-img.jpg",
-            tech: ["Next.js", "Node.js", "Express", "MongoDB", "AWS", "Stripe", "Tailwind CSS"],
-            live: "https://www.waterboyrentals.com/",
+            title: "Pet Products E-Commerce Store",
+            description: "Built and optimized a full e-commerce experience for Whiskers N Paws — Hong Kong's largest pet supply store. Delivered a fast, SEO-optimized Shopify store with clean product navigation, automated order workflows, and seamless checkout.",
+            image: "/wnp.png",
+            video: "/wnp.mp4",
+            tech: ["Shopify", "E-Commerce", "Automation", "SEO"],
+            live: "https://www.wnp.com.hk/",
         },
         {
-            title: "Real-Time Chat Application",
-            description:
-                "A scalable chat system with instant messaging, typing indicators, and seamless communication.",
-            image: "chatApp-img.jpg",
-            tech: ["Socket.IO", "Node.js", "React", "MongoDB", "Express"],
-            live: "https://chat-app-main-seven.vercel.app",
+            title: "AI-Powered Virtual Assistant Platform",
+            description: "Webflow marketing site for a platform that matches founders with AI-powered virtual assistants at 70% less cost.",
+            image: "/assistantly.png",
+            video: "/assistantly.mp4",
+            tech: ["Webflow", "CMS", "Marketing Site", "Interactions"],
+            live: "https://www.assistantly.com/",
         },
-        {
-            title: "Eyevestor Platform",
-            description:
-                "A clean and responsive investor platform UI built with Next.js and Tailwind CSS.",
-            image: "Eyevestor-img.jpg",
-            tech: ["Next.js", "Tailwind", "JavaScript"],
-            live: "https://eyevestor-website.vercel.app",
-        },
-        {
-            title: "AI-Powered Event Management Platform",
-            description:
-                "Developed a full-stack AI-powered platform for corporate event sourcing, contract management, and payments, featuring automated workflows, real-time analytics, and a global vendor network for seamless event execution.",
-            image: "Planned-img.jpg",
-            tech: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "AI Automation", "PostgreSQL", "AWS"],
-            live: "https://planned.com/",
-        },
+
+
     ],
     stats: [
-        { label: "Projects Built", value: 10, suffix: "+" },
+        { label: "Automation Workflows", value: 50, suffix: "+" },
+        { label: "Projects Delivered", value: 25, suffix: "+" },
         { label: "Years Experience", value: 4, suffix: "+" },
-        { label: "GitHub Commits", value: 500, suffix: "+" },
-        { label: "Happy Clients", value: 5, suffix: "+" },
+        { label: "Tools Integrated", value: 100, suffix: "+" },
     ],
     timeline: [
         {
             year: "2024 – Present",
-            title: "Senior Full-Stack Developer",
+            title: " AI Automation Specialist",
             description:
-                "Building full-stack applications at Optimity Logics with scalable backend and modern frontend. Designing APIs, integrating AI features, and optimizing performance.",
+                " Building AI-powered business at Optimity Logics like automation systems, websites, SaaS platforms, and workflow solutions using Multiple automation tools.",
         },
         {
             year: "2022 – 2024",

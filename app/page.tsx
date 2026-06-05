@@ -9,7 +9,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import IntroVideo from "@/app/components/IntroVideo";
+// import IntroVideo from "@/app/components/IntroVideo";
 import Stats from './components/Stats'
 import Contact from './components/Contact'
 import AITools from "@/app/components/AI-tools";
@@ -36,7 +36,7 @@ export default function App() {
             <main className="relative">
                 <Hero />
                 <About />
-                <IntroVideo />
+                {/*<IntroVideo />*/}
                 <Skills />
                 <AITools/>
                 <Projects />

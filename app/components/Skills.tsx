@@ -1,10 +1,26 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Server, Monitor, Database, Brain } from 'lucide-react'
+import {
+    Server,
+    Monitor,
+    Database,
+    Brain,
+    Workflow,
+    Rocket,
+    Layers
+} from 'lucide-react'
 import { portfolio } from '../../data/portfolio'
 
-const iconMap: Record<string, any> = { Server, Monitor, Database, Brain }
+const iconMap: Record<string, any> = {
+    Server,
+    Monitor,
+    Database,
+    Brain,
+    Workflow,
+    Rocket,
+    Layers
+}
 
 export default function Skills() {
     return (
